@@ -1,4 +1,5 @@
 # CV PROJECT
+My website, which is a user login panel with C# programming language and ASP.NET MVC 5 from .Net Technologies; Necessary addition, deletion and update operations are made on the back side, and CV information is made on the front side. In this project, mainly C#, ASP.NET MVC 5, SQL, HTML were used.
 
 Front face of the site
 ----------------------
