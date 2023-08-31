@@ -9,7 +9,8 @@ Front face of the site
 ![CV_Skills](https://github.com/ESoftWar/MVCV/assets/137641919/a7b2ba0e-5895-4161-87f1-d558538617a8)
 ![CV_Hobby](https://github.com/ESoftWar/MVCV/assets/137641919/1b9e16f1-b94d-4047-a43d-f74bedeeebef)
 ![CV_Certificates](https://github.com/ESoftWar/MVCV/assets/137641919/b6ac78a1-7fa9-4538-8bc3-aeb1337f31fd)
-![CV_Contact](https://github.com/ESoftWar/MVCV/assets/137641919/3cfa04ff-9cef-4ce9-b62c-9679d580c81f)
+![CV_Contact](https://github.com/ESoftWar/MVCV/assets/137641919/3ea234d2-d808-4fc4-a42e-12a202be19e3)
+
 
 The back end of the site is built for user-input editing.
 ---------------------------------------------------------
