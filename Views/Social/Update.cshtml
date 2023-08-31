@@ -1,0 +1,24 @@
+﻿@model MVCV.Models.Entity.TBL_SOCIAL
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br />
+<h4><b>New Social Media Update Page</b></h4>
+<br />
+<form method="post">
+    <br />
+    @Html.Label("Name")
+    @Html.TextBoxFor(x => x.NAME, new { @class = "form-control" })
+    <br />
+    @Html.Label("Link")
+    @Html.TextBoxFor(x => x.LINK, new { @class = "form-control" })
+    <br />
+    @Html.Label("ICON")
+    @Html.TextBoxFor(x => x.ICON, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-success">Update</button>
+</form>
+

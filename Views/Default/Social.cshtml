@@ -1,0 +1,9 @@
+﻿@using MVCV.Models.Entity
+@model List<TBL_SOCIAL>
+
+<div class="social-icons">
+    @foreach (var x in Model)
+    {
+        <a class="social-icon" href="@x.LINK"><i class="@x.ICON"></i></a>
+    }
+</div>

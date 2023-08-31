@@ -1,0 +1,34 @@
+﻿@model MVCV.Models.Entity.TBL_EDUCATION
+@{
+    ViewBag.Title = "EducationAdd";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4><b>New Education Add Page</b></h4>
+<br />
+<form method="post">
+    @Html.ValidationMessageFor(x => x.Title, "", new { @style = "color:red" })
+    <br />
+    <br />
+    @Html.Label("Title")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    @Html.Label("Subheading 1")
+    @Html.TextBoxFor(x => x.Subheading1, new { @class = "form-control" })
+    <br />
+    <br />
+    @Html.Label("Subheading 2")
+    @Html.TextBoxFor(x => x.Subheading2, new { @class = "form-control" })
+    <br />
+    <br />
+    @Html.Label("General Point Avarage")
+    @Html.TextBoxFor(x => x.GPA, new { @class = "form-control" })
+    <br />
+    <br />
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-success">Add</button>
+</form>
+

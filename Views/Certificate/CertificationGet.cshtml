@@ -1,0 +1,21 @@
+﻿@model MVCV.Models.Entity.TBL_CERTIFICATES
+@{
+    ViewBag.Title = "CertificationGet";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4><b>New Certification Update Page</b></h4>
+<br />
+<form method="post">
+    <br />
+    @Html.Label("Description")
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-success">Update</button>
+    <a href="/Certificate/CertificationDelete/@ViewBag.ID" class="btn btn-outline-danger">Delete</a>
+</form>
+

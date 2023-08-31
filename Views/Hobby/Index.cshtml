@@ -1,0 +1,17 @@
+﻿@using MVCV.Models.Entity
+@model List<TBL_HOBBY>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2><b>Hobby Page</b></h2>
+<br />
+@foreach (var x in Model)
+{
+    <br />
+    <label class="badge bg-dark" >@x.Description1</label>
+    <label>@x.Description2</label>
+    <br />
+}
+

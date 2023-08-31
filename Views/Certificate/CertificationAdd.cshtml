@@ -1,0 +1,20 @@
+﻿@model MVCV.Models.Entity.TBL_CERTIFICATES
+@{
+    ViewBag.Title = "CertificationAdd";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4><b>New Certification Add Page</b></h4>
+<br />
+<form method="post">
+    <br />
+    @Html.Label("Description")
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-primary">Add</button>
+</form>
+

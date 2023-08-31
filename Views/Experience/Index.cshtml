@@ -1,0 +1,34 @@
+﻿@using MVCV.Models.Entity
+@model List<TBL_EXPERIENCES>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2><b>EXPERIENCE LIST</b></h2>
+<br />
+<table class="table table-border">
+    <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>SUBHEADING</th>
+        <th>DESCRIPTION</th>
+        <th>DATE</th>
+        <th>DELETE</th>
+        <th>UPDATE</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.ID</th>
+            <th>@item.Title</th>
+            <th>@item.Subheading</th>
+            <th>@item.Description</th>
+            <th>@item.Date</th>
+            <th><a href="/Experience/ExperienceDelete/@item.ID" class="btn btn-outline-danger">Delete</a></th>
+            <th><a href="/Experience/ExperienceGet/@item.ID" class="btn btn-outline-success">Update</a></th>
+        </tr>
+    }
+</table>
+<a href="/Experience/ExperienceAdd"  class ="btn btn-outline-primary">Add New Experience</a>
+

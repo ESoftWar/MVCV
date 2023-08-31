@@ -1,0 +1,24 @@
+﻿@model MVCV.Models.Entity.TBL_SKILLS
+
+@{
+    ViewBag.Title = "SkillGet";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4><b>New Skill Update Page</b></h4>
+<br />
+<form method="post">
+    <br />
+    @Html.Label("ID")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+    <br /><br />
+    @Html.Label("Skill")
+    @Html.TextBoxFor(x => x.Skill, new { @class = "form-control" })
+    <br />
+    @Html.Label("Progress")
+    @Html.TextBoxFor(x => x.Progress, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-success">Update</button>
+</form>
+

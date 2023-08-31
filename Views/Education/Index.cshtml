@@ -1,0 +1,47 @@
+﻿@using MVCV.Models.Entity
+@model List<TBL_EDUCATION>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2><b>EDUCATION LIST</b></h2>
+<br />
+<table class="table table-border">
+    <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>SUBHEADING</th>
+        <th>DESCRIPTION</th>
+        <th>DATE</th>
+        <th>DELETE</th>
+        <th>UPDATE</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.ID</th>
+            <th>@item.Title</th>
+            <th>@item.Subheading1</th>
+            <th>@item.Subheading2</th>
+            <th>@item.GPA</th>
+            <th>@item.Date</th>
+            <td>
+                <a href="/Education/EducationDelete/@item.ID" class="btn btn-outline-danger btn-sm">
+                    <i class="fas fa-trash">
+                    </i>
+                    Delete
+                </a>
+            </td>
+            <td>
+                <a href="/Education/EducationGet/@item.ID" class="btn btn-outline-primary btn-sm">
+                    <i class="fas fa-pencil-alt">
+                    </i>
+                    Update
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+<a href="/Education/EducationAdd" class="btn btn-outline-primary">Add New Education</a>
+

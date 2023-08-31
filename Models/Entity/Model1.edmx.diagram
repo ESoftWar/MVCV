@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="94bf328d23fd494594a50a2be858e384" Name="Diagram1" ZoomLevel="109">
+        <EntityTypeShape EntityType="DbCVModel.TBL_ABOUT" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.TBL_ADMIN" Width="1.5" PointX="2.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.TBL_CERTIFICATES" Width="1.5" PointX="2.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.TBL_COMMUNICATION" Width="1.5" PointX="4" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.TBL_EDUCATION" Width="1.5" PointX="4" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.TBL_EXPERIENCES" Width="1.5" PointX="5.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.TBL_HOBBY" Width="1.5" PointX="0.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.TBL_SKILLS" Width="1.5" PointX="5.625" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbCVModel.TBL_SOCIAL" Width="1.5" PointX="7.5" PointY="0.5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

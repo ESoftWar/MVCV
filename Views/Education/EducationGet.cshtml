@@ -1,0 +1,32 @@
+﻿@model MVCV.Models.Entity.TBL_EDUCATION
+@{
+    ViewBag.Title = "EducationGet";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4><b>New Education Update Page</b></h4>
+<form method="post">
+    @Html.ValidationMessageFor(x => x.Title, "", new { @style = "color:red" })
+    <br />
+    @Html.Label("ID")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+    <br />
+    @Html.Label("Title")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    @Html.Label("Subheading1")
+    @Html.TextBoxFor(x => x.Subheading1, new { @class = "form-control" })
+    <br />
+    @Html.Label("Subheading2")
+    @Html.TextBoxFor(x => x.Subheading2, new { @class = "form-control" })
+    <br />
+    @Html.Label("General Point Average")
+    @Html.TextBoxFor(x => x.GPA, new { @class = "form-control" })
+    <br />
+    @Html.Label("Date")
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-success">Update</button>
+</form>
+

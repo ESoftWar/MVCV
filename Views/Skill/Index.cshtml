@@ -1,0 +1,102 @@
+﻿@using MVCV.Models.Entity
+@model List<TBL_SKILLS>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@{ string color = "";}
+@{ string labelColor = "";}
+
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1 class="card-title"><b>SKILL LIST</b></h1>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <a href="/Skill/SkillAdd" class="btn btn-outline-info">Add New Skill</a>
+                                <br />
+                                <br />
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 10px">#</th>
+                                            <th>Task</th>
+                                            <th>Progress</th>
+                                            <th style="width: 40px">Ratio</th>
+                                            <th>Delete</th>
+                                            <th>Update</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        @foreach (var x in Model)
+                                        {
+                                            if (x.Progress >= 0 && x.Progress <= 50)
+                                            {
+                                                color = "progress-bar bg-danger";
+                                                labelColor = "badge bg-danger";
+                                            }
+                                            if (x.Progress > 50 && x.Progress <= 70)
+                                            {
+                                                color = "progress-bar bg-warning";
+                                                labelColor = "badge bg-warning";
+                                            }
+                                            if (x.Progress > 70 && x.Progress < 85)
+                                            {
+                                                color = "progress-bar bg-primary";
+                                                labelColor = "badge bg-primary";
+                                            }
+                                            if (x.Progress >= 85 && x.Progress <= 100)
+                                            {
+                                                color = "progress-bar bg-success";
+                                                labelColor = "badge bg-success";
+                                            }
+                                            <tr>
+                                                <td>@x.ID</td>
+                                                <td>@x.Skill</td>
+                                                <td>
+                                                    <div class="progress progress-xs">
+                                                        <div class="@color" style="width: @x.Progress%"></div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="@labelColor">@x.Progress%</span></td>
+                                                <td>
+                                                    <a href="/Skill/SkillDelete/@x.ID" class="btn btn-outline-danger btn-sm" >
+                                                        <i class="fas fa-trash">
+                                                        </i>
+                                                        Delete
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="/Skill/SkillGet/@x.ID" class="btn btn-outline-primary btn-sm" >
+                                                        <i class="fas fa-pencil-alt">
+                                                        </i>
+                                                        Update
+                                                    </a>
+                                                </td>
+
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+    </div>
+</body>
+</html>
+
